@@ -16,7 +16,7 @@
     <div class="container">
       <!-- Header -->
       <nav class="row space-between">
-        <input type="checkbox" id="hamburger-menu-status" />
+        <!-- <input type="checkbox" id="hamburger-menu-status" /> -->
         <!-- Logo -->
         <div class="logo-container row">
           <img src="images/logo.svg" alt="logo" />
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Header links -->
-        <div class="header-links row row-centered font-fam">
+        <div class="header-links row row-centered">
           <a href="#" class="text-color">Product</a>
           <a href="#" class="text-color">Customers</a>
           <a href="#" class="text-color">Pricing</a>
@@ -37,19 +37,37 @@
           <button class="buttons green-button font-fam medium-text semi-bold">
             Sign up
           </button>
-          <img src="images/switch-button.svg" alt="switch-button" />
+
+          <button class="switch-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z"
+                fill="#02897A"
+              />
+              <path
+                d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z"
+                fill="#02897A"
+              />
+            </svg>
+          </button>
+          <!-- <img src="images/switch-button.svg" alt="switch-button" /> -->
         </div>
 
         <!-- hamburger menu for mobile -->
-        <div class="row row-centered">
+        <!-- <div class="hamburger-menu row row-centered">
           <label for="hamburger-menu-status">
             <img
-              class="hamburger-menu"
               src="images/menu.svg"
               alt="Hamburger menu"
             />
           </label>
-        </div>
+        </div> -->
       </nav>
 
       <!-- First section -->
@@ -413,15 +431,62 @@
       </section>
 
       <!-- Tenth section -->
-      <section class="section10 row margin-auto">
+      <section class="section10 row space-between margin-auto">
         <div class="column">
           <h2>Join 100 Compannies who boost their business with Product</h2>
           <button class="buttons bold">Get This</button>
         </div>
-        <img src="image/section10.png" alt="" />
+        <img src="images/section10.png" alt="" />
       </section>
-      
+
       <!-- Footer -->
+      <footer>
+        <div class="footer-sections row space-between">
+          <!-- Logo and Social Media Section -->
+          <div>
+            <div class="row logo-container">
+              <img src="images/logo.svg" alt="logo" />
+              <h2 class="font-fam bold">Product</h2>
+            </div>
+            <div>
+              <img src="images/instagram.svg" alt="" />
+              <img src="images/facebook.svg" alt="" />
+              <img src="images/twitter.svg" alt="" />
+            </div>
+          </div>
+          <!-- Resource Section -->
+          <div class="">
+            <h3>Resource</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Contact</p>
+            <p>FAQ</p>
+          </div>
+          <!-- Legal Stuff Section -->
+          <div class="">
+            <h3>Legal Stuff</h3>
+            <p>Disclaimer</p>
+            <p>Financing</p>
+            <p>Privicy Policy</p>
+            <p>Terms of Service</p>
+          </div>
+
+          <div class="sign-up-section">
+            <h3>knowing you're always on the best energy deal.</h3>
+            <form>
+              <input class="textbox" type="text" /><br />
+              <input
+                class="bold buttons green-button"
+                type="submit"
+                value="Sign Up Now"
+              />
+            </form>
+          </div>
+        </div>
+        <p id="footnote" class="text-align">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+      </footer>
     </div>
   </body>
 </html>
